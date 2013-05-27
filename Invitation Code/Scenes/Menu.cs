@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.IO;
 using DxLibDLL;
 using Microsoft.VisualBasic;
 using Monads = Alice.Functional.Monads;
@@ -56,6 +57,29 @@ namespace Invitation.Scenes
                         }
 
                         break;
+
+
+                    case 2:
+
+                        // キャストとIOとSplitをErrorモナドに包む
+
+                        var error3 = new Monads.Error<Tuple<int, string>>(() =>
+                                {
+                                    using (var reader = new StreamReader(File.Open("IPAddress.txt",FileMode.OpenOrCreate)))
+                                    {
+                                        var input2 = reader.ReadLine();
+                                        return Tuple.Create(int.Parse(input2.Split(':')[1]), input2.Split(':')[0]);
+                                    }
+                                });
+
+                        // エラーでないなら開始
+                        if (!error3.IsError)
+                        {
+                            cntr = new NetConnector(StartType.Client, error3.Value.Item1, error3.Value.Item2);
+                            cntr.Start();
+                        }
+
+                        break;
                 }
 
 
@@ -91,12 +115,13 @@ namespace Invitation.Scenes
             {
                 selectIndex++;
             }
-            if (selectIndex > 1 || selectIndex < 0)
+            if (selectIndex > 2 || selectIndex < 0)
                 selectIndex = 0;
 
             DX.DrawString(100, 100, "Build Server", DX.GetColor(255, 255, 255));
             DX.DrawString(100, 150, "Connect to Server", DX.GetColor(255, 255, 255));
             DX.DrawGraph(50, selectIndex * 50 + 100, DXResources.Images["Arrow"], 1);
+            DX.DrawString(100, 200, "Connect to Server from FileReading", DX.GetColor(255, 255, 255));
             
             if (cntr != null && cntr.IsWaiting)
             {
