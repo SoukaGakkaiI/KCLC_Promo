@@ -112,6 +112,12 @@ namespace Invitation
             {
                 return new Vector(this.X + this.Size.X / 2, this.Y + this.Size.Y / 2);
             }
+
+            set
+            {
+                this.X = value.X - this.Size.X / 2;
+                this.Y = value.Y - this.Size.Y / 2;
+            }
         }
         
         public override bool IsHit<T>(T o)

@@ -38,7 +38,7 @@ namespace Alice.Functional.Monads
 
         void _error(Exception e)
         {
-            IsError = false;
+            IsError = true;
             Exception = e;
         }
     }

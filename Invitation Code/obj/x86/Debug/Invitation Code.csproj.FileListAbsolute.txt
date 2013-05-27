@@ -19,5 +19,3 @@ C:\Users\SGI\Documents\GitHub\KCLC_Promo\Invitation Code\obj\x86\Debug\Invitatio
 C:\Users\SGI\Documents\GitHub\KCLC_Promo\Invitation Code\bin\x86\Debug\Invitation.exe
 C:\Users\SGI\Documents\GitHub\KCLC_Promo\Invitation Code\bin\x86\Debug\Invitation.pdb
 C:\Users\SGI\Documents\GitHub\KCLC_Promo\Invitation Code\obj\x86\Debug\Invitation Code.csprojResolveAssemblyReference.cache
-C:\Users\SGI\Documents\GitHub\KCLC_Promo\Invitation Code\obj\x86\Debug\ClientInput.resources
-C:\Users\SGI\Documents\GitHub\KCLC_Promo\Invitation Code\obj\x86\Debug\Invitation Code.csproj.GenerateResource.Cache

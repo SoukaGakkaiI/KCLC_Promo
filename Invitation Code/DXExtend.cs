@@ -11,6 +11,15 @@ namespace Invitation
         public static Dictionary<string, int> Images = new Dictionary<string, int>
         {
             {"Arrow", DX.LoadGraph("data\\arrow.bmp")},
+            {"XP",DX.LoadGraph("data\\img-logo-is-canceled.jpg")},
+            {"Vista",DX.LoadGraph("data\\vista.bmp")},
+            {"Box",DX.LoadGraph("data\\box.png")},
+        };
+
+        public static Dictionary<string, int[]> Effects = new Dictionary<string, int[]>
+        {
+            {"Explode",Enumerable.Range(0,128).Select(x => DX.LoadGraph("data\\Explode" + x + ".bmp")).ToArray()},
+            {"Bomb",Enumerable.Range(0,20).Select(x => DX.LoadGraph("data\\e00" + (10 + x / 2) + ".png")).ToArray()},
         };
     }
 }
