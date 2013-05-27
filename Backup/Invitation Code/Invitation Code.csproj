@@ -8,16 +8,12 @@
     <ProjectGuid>{B67497E3-DBD9-40B6-827F-BB871E0828D3}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Invitation</RootNamespace>
-    <AssemblyName>Invitation</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <RootNamespace>Project1</RootNamespace>
+    <AssemblyName>Invitation Code</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <FileUpgradeFlags>
-    </FileUpgradeFlags>
-    <OldToolsVersion>4.0</OldToolsVersion>
-    <UpgradeBackupLocation>
-    </UpgradeBackupLocation>
-    <TargetFrameworkProfile />
+    <FileUpgradeFlags>0</FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -68,33 +64,21 @@
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Alice.Extensions.cs" />
-    <Compile Include="Chara.cs" />
-    <Compile Include="DXExtend.cs" />
-    <Compile Include="IScene.cs" />
-    <Compile Include="Libs\Angle.cs" />
-    <Compile Include="Obsolete\ClientInput.cs">
+    <Compile Include="ClientInput.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Obsolete\ClientInput.designer.cs">
+    <Compile Include="ClientInput.designer.cs">
       <DependentUpon>ClientInput.cs</DependentUpon>
     </Compile>
-    <Compile Include="Input.cs" />
-    <Compile Include="Libs\Occupy.cs" />
-    <Compile Include="Online.cs" />
-    <Compile Include="Obsolete\Stuff.cs" />
-    <Compile Include="Libs\DxDLL.cs" />
-    <Compile Include="Obsolete\Net.cs" />
+    <Compile Include="Stuff.cs" />
+    <Compile Include="DxDLL.cs" />
+    <Compile Include="Net.cs" />
     <Compile Include="Main.cs" />
-    <Compile Include="Obsolete\Gaming.cs" />
-    <Compile Include="Libs\Vector.cs" />
+    <Compile Include="Gaming.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Obsolete\ClientInput.resx">
+    <EmbeddedResource Include="ClientInput.resx">
       <DependentUpon>ClientInput.cs</DependentUpon>
     </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="app.config" />
   </ItemGroup>
 </Project>

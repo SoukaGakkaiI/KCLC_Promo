@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual C# Express 2008
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Invitation Code", "Invitation Code\Invitation Code.csproj", "{B67497E3-DBD9-40B6-827F-BB871E0828D3}"
 EndProject
 Global

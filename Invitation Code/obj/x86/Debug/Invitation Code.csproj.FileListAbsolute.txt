@@ -5,3 +5,11 @@ C:\Users\SGI\Desktop\Invitation Code\Invitation Code\obj\x86\Debug\ClientInput.r
 C:\Users\SGI\Desktop\Invitation Code\Invitation Code\obj\x86\Debug\Invitation Code.csproj.GenerateResource.Cache
 C:\Users\SGI\Desktop\Invitation Code\Invitation Code\obj\x86\Debug\Invitation Code.exe
 C:\Users\SGI\Desktop\Invitation Code\Invitation Code\obj\x86\Debug\Invitation Code.pdb
+D:\alice\codes\Promo\Invitation Code\bin\x86\Debug\Invitation.exe
+D:\alice\codes\Promo\Invitation Code\bin\x86\Debug\Invitation.pdb
+D:\alice\codes\Promo\Invitation Code\obj\x86\Debug\Invitation Code.csprojResolveAssemblyReference.cache
+D:\alice\codes\Promo\Invitation Code\obj\x86\Debug\ClientInput.resources
+D:\alice\codes\Promo\Invitation Code\obj\x86\Debug\Invitation Code.csproj.GenerateResource.Cache
+D:\alice\codes\Promo\Invitation Code\obj\x86\Debug\Invitation.exe
+D:\alice\codes\Promo\Invitation Code\obj\x86\Debug\Invitation.pdb
+D:\alice\codes\Promo\Invitation Code\bin\x86\Debug\Invitation.exe.config
