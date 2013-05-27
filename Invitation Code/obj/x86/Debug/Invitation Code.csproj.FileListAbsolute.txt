@@ -13,3 +13,11 @@ D:\alice\codes\Promo\Invitation Code\obj\x86\Debug\Invitation Code.csproj.Genera
 D:\alice\codes\Promo\Invitation Code\obj\x86\Debug\Invitation.exe
 D:\alice\codes\Promo\Invitation Code\obj\x86\Debug\Invitation.pdb
 D:\alice\codes\Promo\Invitation Code\bin\x86\Debug\Invitation.exe.config
+C:\Users\SGI\Documents\GitHub\KCLC_Promo\Invitation Code\bin\x86\Debug\Invitation.exe.config
+C:\Users\SGI\Documents\GitHub\KCLC_Promo\Invitation Code\obj\x86\Debug\Invitation.exe
+C:\Users\SGI\Documents\GitHub\KCLC_Promo\Invitation Code\obj\x86\Debug\Invitation.pdb
+C:\Users\SGI\Documents\GitHub\KCLC_Promo\Invitation Code\bin\x86\Debug\Invitation.exe
+C:\Users\SGI\Documents\GitHub\KCLC_Promo\Invitation Code\bin\x86\Debug\Invitation.pdb
+C:\Users\SGI\Documents\GitHub\KCLC_Promo\Invitation Code\obj\x86\Debug\Invitation Code.csprojResolveAssemblyReference.cache
+C:\Users\SGI\Documents\GitHub\KCLC_Promo\Invitation Code\obj\x86\Debug\ClientInput.resources
+C:\Users\SGI\Documents\GitHub\KCLC_Promo\Invitation Code\obj\x86\Debug\Invitation Code.csproj.GenerateResource.Cache
