@@ -1,0 +1,7 @@
+C:\Users\SGI\Desktop\Invitation Code\Invitation Code\bin\x86\Debug\Invitation Code.exe
+C:\Users\SGI\Desktop\Invitation Code\Invitation Code\bin\x86\Debug\Invitation Code.pdb
+C:\Users\SGI\Desktop\Invitation Code\Invitation Code\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\SGI\Desktop\Invitation Code\Invitation Code\obj\x86\Debug\ClientInput.resources
+C:\Users\SGI\Desktop\Invitation Code\Invitation Code\obj\x86\Debug\Invitation Code.csproj.GenerateResource.Cache
+C:\Users\SGI\Desktop\Invitation Code\Invitation Code\obj\x86\Debug\Invitation Code.exe
+C:\Users\SGI\Desktop\Invitation Code\Invitation Code\obj\x86\Debug\Invitation Code.pdb

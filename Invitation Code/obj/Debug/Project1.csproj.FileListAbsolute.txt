@@ -1,0 +1,3 @@
+C:\Users\SGI\AppData\Local\Temporary Projects\Project1\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\SGI\AppData\Local\Temporary Projects\Project1\obj\Debug\ClientInput.resources
+C:\Users\SGI\AppData\Local\Temporary Projects\Project1\obj\Debug\Project1.csproj.GenerateResource.Cache
