@@ -66,7 +66,7 @@ namespace Invitation
         /// </summary>
         public static void Update()
         {
-            keyCache = keyData;
+            keyCache = new byte[0].Concat(keyData).ToArray();
             DX.GetHitKeyStateAll(out keyData[0]);
             mouseCache = mouseState;
             mouseState = DX.GetMouseInput();

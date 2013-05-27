@@ -73,6 +73,7 @@
     <Compile Include="DXExtend.cs" />
     <Compile Include="IScene.cs" />
     <Compile Include="Libs\Angle.cs" />
+    <Compile Include="Libs\Error.cs" />
     <Compile Include="Obsolete\ClientInput.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +89,8 @@
     <Compile Include="Main.cs" />
     <Compile Include="Obsolete\Gaming.cs" />
     <Compile Include="Libs\Vector.cs" />
+    <Compile Include="Scenes\Menu.cs" />
+    <Compile Include="Scenes\Promotion.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Obsolete\ClientInput.resx">

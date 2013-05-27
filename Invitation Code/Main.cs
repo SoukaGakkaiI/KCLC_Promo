@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using DxLibDLL;
+using Invitation.Scenes;
 
 namespace Invitation
 {
@@ -17,7 +18,7 @@ namespace Invitation
             if (DX.DxLib_Init() == -1) return;
             DX.SetDrawScreen(DX.DX_SCREEN_BACK);
             DX.SetGraphMode(800, 600, 32);
-            scene = new Game();
+            scene = new Menu();
             while (DX.ProcessMessage() == 0)
             {
                 DX.ClearDrawScreen();
@@ -44,7 +45,7 @@ namespace Invitation
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="_scene"></param>
-        public static void ChangeScene<T>(IScene _scene)
+        public static void ChangeScene<T>(T _scene)
             where T : IScene
         {
             scene = _scene;

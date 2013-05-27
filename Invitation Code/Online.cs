@@ -30,6 +30,7 @@ namespace Invitation
         UdpClient client;
         IPEndPoint endpoint;
         Task waitTask;
+        bool disposing;
 
         public int Port { get; private set; }
         public string HostName { get; private set; }
@@ -67,7 +68,7 @@ namespace Invitation
         /// <param name="type"></param>
         /// <param name="hostname"></param>
         /// <param name="port"></param>
-        public NetConnector(StartType type, string hostname = "localhost", int port = 10800)
+        public NetConnector(StartType type, int port = 10800, string hostname = "localhost")
         {
             Type = type;
             Port = port;
@@ -80,12 +81,7 @@ namespace Invitation
 
             Disconnected = new EventHandler<NetConnectEventArgs>((_, __) =>
                 {
-                    if (client != null)
-                        client.Close();
-                    if (waitTask != null)
-                        waitTask.Dispose();
-                    IsConnected = false;
-                    IsClosing = false;
+                    Dispose();
                 });
         }
 
@@ -137,9 +133,6 @@ namespace Invitation
                             Write("CLSD");
                             Disconnected(this, new NetConnectEventArgs(HostName, Port));
                             break;
-                        case "CLSD":
-                            Disconnected(this, new NetConnectEventArgs(HostName, Port));
-                            break;
                         default:
                             return read;
                     }
@@ -158,7 +151,7 @@ namespace Invitation
         /// </summary>
         void Wait()
         {
-            while (!IsConnected)
+            while (!IsConnected && !disposing)
             {
                 switch (Read())
                 {
@@ -182,16 +175,16 @@ namespace Invitation
         /// </summary>
         public void Close()
         {
-            Write("CLS");
-            waitTask = new Task(() =>
+            new Task(() =>
+            {
+                Write("CLS");
+                while (IsConnected)
                 {
-                    while (IsConnected)
-                    {
-                        Read();
-                    }
-                });
-            IsClosing = true;
-            waitTask.Start();
+                    if (Read() == "CLSD")
+                        IsConnected = false;
+                }
+                Disconnected(this, new NetConnectEventArgs(HostName, Port));
+            }).Start();
         }
 
         /// <summary>
@@ -202,8 +195,13 @@ namespace Invitation
             if (client != null)
                 client.Close();
             if (waitTask != null)
+            {
+                disposing = true;
+                waitTask.Wait();
                 waitTask.Dispose();
+            }
             IsConnected = false;
+            IsWaiting = false;
         }
     }
 }
